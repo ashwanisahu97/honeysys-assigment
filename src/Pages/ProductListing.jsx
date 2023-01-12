@@ -1,16 +1,13 @@
 import React from 'react'
-import styles from '../style/ProductListing.module.css'; 
+import styles from '../Styles/ProductListing.module.css'; 
 import axios from "axios";
 import { useEffect, useState } from 'react';
-import ProductSimple from './Components/ProductSimple';
 const ProductListing = () => {
     const [products, setProducts] = useState([])
   useEffect(() => { 
     fetchData()
   }, [])
-  useEffect(() => { 
-    setFilterProducts(products);
-  },[products.length])
+ 
   const fetchData = () => { 
     axios.get("http://localhost:8080/products").then(({ data }) => {
       console.log("data", data);
@@ -24,9 +21,9 @@ const ProductListing = () => {
           {
               products.map((element) => { 
                   return (<div className={ styles.card}>
-                      <h1>{ element.title}</h1>
-                      <p>{ element.title}</p>
-                      <div><img src={ element.image} alt="" /> </div>
+                   <div><h1>{ element.title}</h1></div> 
+                   <div> <p>{ element.description}</p></div> 
+                    <div className={ styles.productImage}><img src={ element.image} alt="" /> </div>
                   </div>
                   )
               })
