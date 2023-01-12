@@ -1,7 +1,8 @@
 import styles from '../Styles/Homepage.module.css'; 
 import axios from "axios";
 import { useEffect, useState } from 'react';
-import ProductSimple from './Components/ProductSimple';
+import ProductSimple from '../Components/ProductSimple';
+
 
 function Homepage() {
   const [products, setProducts] = useState([])
