@@ -22,13 +22,18 @@ img{
     position: relative;
     top:350px;
 }
+.productTitle>h1{
+    position:relative;
+    z-index: 6;
+}
 .productImage{
-    z-index: -20;
-    border:1px solid green;
+    position: relative;
+    z-index: 5;
 }
 .productDescription{
     position: relative;
     top:350px;
+    z-index: 6;
 }
 /* .productImage{
     width:300px;
