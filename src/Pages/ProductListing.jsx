@@ -20,7 +20,7 @@ const ProductListing = () => {
     <div className={styles.container}>
           {
               products.map((element) => { 
-                  return (<div className={ styles.card}>
+                return (<div className={styles.card} key={ element.id}>
                     <div className={ styles.productTitle}><h1>{ element.title}</h1></div> 
                    <div className={ styles.productDescription}> <p>{ element.description}</p></div> 
                     <div className={ styles.productImage}><img src={ element.image} alt="" /> </div>
