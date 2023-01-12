@@ -1,20 +1,36 @@
 .container{
     display:flex;
-    gap:"2%";
+    gap:2%;
     flex-wrap: wrap;
 }
-.container>.card{
+.card{
+    width:23%;
     border:1px solid red;
-    width:20%;
+    margin-bottom: 30px;
 }
-h1,p{
-    border: 1px solid green;;
+.card>div{
+   
+
+    overflow: hidden;
 }
+
 img{
     width:100%;
     height:100%;
 }
+.productTitle{
+    position: relative;
+    top:350px;
+}
 .productImage{
+    z-index: -20;
+    border:1px solid green;
+}
+.productDescription{
+    position: relative;
+    top:350px;
+}
+/* .productImage{
     width:300px;
     height:400px;
-}
+} */

@@ -21,8 +21,8 @@ const ProductListing = () => {
           {
               products.map((element) => { 
                   return (<div className={ styles.card}>
-                   <div><h1>{ element.title}</h1></div> 
-                   <div> <p>{ element.description}</p></div> 
+                    <div className={ styles.productTitle}><h1>{ element.title}</h1></div> 
+                   <div className={ styles.productDescription}> <p>{ element.description}</p></div> 
                     <div className={ styles.productImage}><img src={ element.image} alt="" /> </div>
                   </div>
                   )
