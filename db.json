@@ -1,0 +1,95 @@
+{
+    "products":[
+        {
+            "id":1,
+           "title":"shirt",
+           "color":"red",
+           "image":"",
+           "brand":"nike",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":2,
+           "title":"jeans",
+           "color":"black",
+           "brand":"addidas",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+
+        {
+            "id":3,
+           "title":" full shirt",
+           "color":"green",
+           "brand":"puma",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":4,
+           "title":"jacket",
+           "color":"brown",
+           "brand":"addidas",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":5,
+           "title":"pants",
+           "color":"black",
+           "brand":"nike",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+
+        {
+            "id":6,
+           "title":"rainy clothes",
+           "color":"green",
+           "brand":"addidas",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":7,
+           "title":"sweter",
+           "color":"brown",
+           "brand":"puma",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":8,
+           "title":"half shirt",
+           "color":"brown",
+           "brand":"lee cooper",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":9,
+           "title":"sadi",
+           "color":"green",
+           "brand":"addidas",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":10,
+           "title":"T-shirt",
+           "color":"black",
+           "brand":"jack and jones",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        },
+        {
+            "id":11,
+           "title":"",
+           "color":"green",
+           "brand":"nike",
+           "image":"",
+           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
+        }
+    ]
+
+}
