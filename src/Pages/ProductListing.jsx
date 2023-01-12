@@ -17,7 +17,7 @@ const ProductListing = () => {
     })
   }
   return (
-      <div className={ styles.container}>
+    <div className={styles.container}>
           {
               products.map((element) => { 
                   return (<div className={ styles.card}>
