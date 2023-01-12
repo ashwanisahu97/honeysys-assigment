@@ -2,11 +2,13 @@ import styles from '../Styles/Homepage.module.css';
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import ProductSimple from '../Components/ProductSimple';
+import { useNavigate } from 'react-router-dom';
 
 
 function Homepage() {
   const [products, setProducts] = useState([])
   const [filterProducts, setFilterProducts] = useState([])
+    const navigate = useNavigate();
   useEffect(() => { 
     // alert("first useEffect")
     fetchData()
@@ -33,6 +35,20 @@ function Homepage() {
   console.log("products", products);
   return (
     <div className={ styles.container}>
+          <div className={ styles.buttonsContainer}>
+    <button onClick={() => { 
+      navigate("/")
+    }} className={ styles.all}>All</button>
+    <button onClick={() => { 
+      filterData("nike","black")
+    }} className={ styles.blackButton}>Nike</button>
+    <button onClick={() => { 
+      filterData("puma","green")
+    }} className={ styles.greenButton}>Puma</button>
+    <button onClick={() => { 
+      filterData("addidas","red")
+    }} className={ styles.redButton}>Adidas</button>
+  </div>
       <table>
         <thead>
         <tr>
@@ -51,17 +67,7 @@ function Homepage() {
           }
           </tbody>
       </table>
-      <div>
-        <button onClick={() => { 
-          filterData("nike","black")
-        }} className={ styles.blackButton}>Nike</button>
-        <button onClick={() => { 
-          filterData("puma","green")
-        }} className={ styles.greenButton}>Puma</button>
-        <button onClick={() => { 
-          filterData("addidas","red")
-        }} className={ styles.redButton}>Adidas</button>
-      </div>
+      
     </div>
   );
 }
