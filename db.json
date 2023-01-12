@@ -11,7 +11,7 @@
         {
             "id":2,
            "title":"jeans",
-           "color":"black",
+           "color":"red",
            "brand":"addidas",
            "image":"",
            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
@@ -28,7 +28,7 @@
         {
             "id":4,
            "title":"jacket",
-           "color":"brown",
+           "color":"red",
            "brand":"addidas",
            "image":"",
            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
@@ -53,7 +53,7 @@
         {
             "id":7,
            "title":"sweter",
-           "color":"brown",
+           "color":"green",
            "brand":"puma",
            "image":"",
            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
@@ -61,8 +61,8 @@
         {
             "id":8,
            "title":"half shirt",
-           "color":"brown",
-           "brand":"lee cooper",
+           "color":"black",
+           "brand":"nike",
            "image":"",
            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
         },
@@ -77,16 +77,8 @@
         {
             "id":10,
            "title":"T-shirt",
-           "color":"black",
-           "brand":"jack and jones",
-           "image":"",
-           "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
-        },
-        {
-            "id":11,
-           "title":"",
-           "color":"green",
-           "brand":"nike",
+           "color":"red",
+           "brand":"puma",
            "image":"",
            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in"
         }

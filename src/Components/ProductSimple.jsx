@@ -1,8 +1,14 @@
 import React from 'react'
 
-const ProductSimple = () => {
+const ProductSimple = ({ element}) => {
   return (
-    <div>ProductSimple</div>
+      <tr>
+          <td>{ element.id}</td>
+          <td>{ element.title}</td>
+          <td>{ element.brand}</td>
+          {/* <td>{ element.description}</td> */}
+          <td>{ element.color}</td>
+   </tr>
   )
 }
 
