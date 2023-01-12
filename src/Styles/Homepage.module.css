@@ -1,0 +1,27 @@
+.container{
+    width:50vw;
+    margin:auto;
+  }
+  .container>table, th, td {
+    border: 1px solid;
+  }
+  
+  td{
+    width:200px;
+    border:1px solid teal;
+    height:50px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .blackButton{
+    background-color: black;
+    color:white
+  }
+  .redButton{
+    background-color: red;
+    color:white
+  }
+  .greenButton{
+    background-color: green;
+    color:white
+  }

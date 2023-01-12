@@ -20,8 +20,16 @@ const ProductListing = () => {
     })
   }
   return (
-      <div>
+      <div className={ styles.container}>
           {
+              products.map((element) => { 
+                  return (<div className={ styles.card}>
+                      <h1>{ element.title}</h1>
+                      <p>{ element.title}</p>
+                      <div><img src={ element.image} alt="" /> </div>
+                  </div>
+                  )
+              })
           }
     </div>
   )
