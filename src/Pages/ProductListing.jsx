@@ -9,7 +9,7 @@ const ProductListing = () => {
   }, [])
  
   const fetchData = () => { 
-    axios.get("http://localhost:8080/products").then(({ data }) => {
+    axios.get("https://honeysys-json-server.onrender.com/products").then(({ data }) => {
       console.log("data", data);
       setProducts(data);
     }).catch((error) => { 

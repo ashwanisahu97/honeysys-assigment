@@ -7,21 +7,28 @@ import { useNavigate } from 'react-router-dom';
 
 function Homepage() {
   const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(false)
   const [filterProducts, setFilterProducts] = useState([])
     const navigate = useNavigate();
   useEffect(() => { 
     // alert("first useEffect")
     fetchData()
   }, [])
-  useEffect(() => { 
-    setFilterProducts(products);
+    useEffect(() => {
+        if (products) {
+            setFilterProducts(products);
+        }
   },[products.length])
-  const fetchData = () => { 
-    axios.get("http://localhost:8080/products").then(({ data }) => {
-      console.log("data", data);
+    const fetchData = () => { 
+        setLoading(true);
+    axios.get("https://honeysys-json-server.onrender.com/products").then(({ data }) => {
+        console.log("data", data);
+        setLoading(false)
       setProducts(data);
     }).catch((error) => { 
-      console.log("error",error)
+        console.log("error", error)
+        setError(true);
     })
   }
   const filterData = (brand,color) => { 
@@ -46,26 +53,28 @@ function Homepage() {
     <button onClick={() => { 
       filterData("addidas","red")
     }} className={ styles.redButton}>Adidas</button>
-  </div>
-      <table>
-        <thead>
-        <tr>
-<th>Id</th>
-<th>Title</th>
-<th>Brand</th>
-{/* <th>Description</th> */}
-<th>Color</th>
-          </tr>
-          </thead>
-     <tbody>
-      {
-        filterProducts?.map((element) => {
-          return <ProductSimple element={element} key={element.id}/>
-        })
+          </div>
+          {
+              loading ? <div>data is loading</div> : error ? <div>something went wrong,please try again</div> :
+                  (<table>
+                      <thead>
+                          <tr>
+                              <th>Id</th>
+                              <th>Title</th>
+                              <th>Brand</th>
+                              {/* <th>Description</th> */}
+                              <th>Color</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          {
+                              filterProducts?.map((element) => {
+                                  return (<ProductSimple element={element} key={element.id} />)
+                              })
+                          }
+                      </tbody>
+                  </table>)
           }
-          </tbody>
-      </table>
-      
     </div>
   );
 }
