@@ -14,7 +14,6 @@ function Homepage() {
     fetchData()
   }, [])
   useEffect(() => { 
-    // alert(JSON.stringify(products))
     setFilterProducts(products);
   },[products.length])
   const fetchData = () => { 
@@ -26,8 +25,7 @@ function Homepage() {
     })
   }
   const filterData = (brand,color) => { 
-    let temp=[...products]
-    let temp2 = temp.filter((e) => e.brand === brand&&e.color===color);
+    let temp2 = products.filter((e) => e.brand === brand&&e.color===color);
     console.log("temp2",temp2);
     setFilterProducts(temp2);
   }
@@ -37,7 +35,7 @@ function Homepage() {
     <div className={ styles.container}>
           <div className={ styles.buttonsContainer}>
     <button onClick={() => { 
-      navigate("/")
+      setFilterProducts(products);
     }} className={ styles.all}>All</button>
     <button onClick={() => { 
       filterData("nike","black")
