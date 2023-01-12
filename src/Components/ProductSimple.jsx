@@ -7,7 +7,7 @@ const ProductSimple = ({ element}) => {
           <td>{ element.title}</td>
           <td>{ element.brand}</td>
           {/* <td>{ element.description}</td> */}
-          <td>{ element.color}</td>
+          <td><button style={{background:element.color}}>{ element.color}</button></td>
    </tr>
   )
 }

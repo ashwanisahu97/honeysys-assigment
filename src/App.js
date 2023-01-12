@@ -5,6 +5,7 @@ import ProductSimple from './Components/ProductSimple';
 
 function App() {
   const [products, setProducts] = useState([])
+  const [filterProducts, setFilterProducts] = useState([])
   useEffect(() => { 
     fetchData()
   }, [])
@@ -17,8 +18,8 @@ function App() {
     })
   }
   const filterData = (brand,color) => { 
-    console.log("products",products)
-    let temp2 = products.filter((e) => e.brand === brand&&e.color===color);
+    let temp=[...filterProducts]
+    let temp2 = temp.filter((e) => e.brand === brand&&e.color===color);
     console.log("temp2",temp2);
     setProducts(temp2);
   }
@@ -48,10 +49,10 @@ function App() {
           filterData("nike","black")
         }} className={ styles.blackButton}>Nike</button>
         <button onClick={() => { 
-          filterData("nike","black")
+          filterData("puma","green")
         }} className={ styles.greenButton}>Puma</button>
         <button onClick={() => { 
-          filterData("nike","black")
+          filterData("adidas","red")
         }} className={ styles.redButton}>Adidas</button>
       </div>
     </div>
