@@ -5,7 +5,7 @@ import ProductSimple from './Components/ProductSimple';
 
 function App() {
   const [products, setProducts] = useState([])
-  const [filterProducts, setFilterProducts] = useState([])
+  const [filterProducts, setFilterProducts] = useState(products)
   useEffect(() => { 
     fetchData()
   }, [])
@@ -18,10 +18,10 @@ function App() {
     })
   }
   const filterData = (brand,color) => { 
-    let temp=[...filterProducts]
+    let temp=[...products]
     let temp2 = temp.filter((e) => e.brand === brand&&e.color===color);
     console.log("temp2",temp2);
-    setProducts(temp2);
+    setFilterProducts(temp2);
   }
  
   return (
@@ -38,7 +38,7 @@ function App() {
           </thead>
      <tbody>
       {
-        products?.map((element) => {
+        filterProducts?.map((element) => {
           return <ProductSimple element={element} key={element.id}/>
         })
           }
