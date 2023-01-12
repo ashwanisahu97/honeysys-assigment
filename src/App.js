@@ -5,10 +5,15 @@ import ProductSimple from './Components/ProductSimple';
 
 function App() {
   const [products, setProducts] = useState([])
-  const [filterProducts, setFilterProducts] = useState(products)
+  const [filterProducts, setFilterProducts] = useState([])
   useEffect(() => { 
+    // alert("first useEffect")
     fetchData()
   }, [])
+  useEffect(() => { 
+    // alert(JSON.stringify(products))
+    setFilterProducts(products);
+  },[products.length])
   const fetchData = () => { 
     axios.get("http://localhost:8080/products").then(({ data }) => {
       console.log("data", data);
@@ -23,7 +28,8 @@ function App() {
     console.log("temp2",temp2);
     setFilterProducts(temp2);
   }
- 
+  console.log("filter value", filterProducts);
+  console.log("products", products);
   return (
     <div className={ styles.container}>
       <table>
@@ -52,7 +58,7 @@ function App() {
           filterData("puma","green")
         }} className={ styles.greenButton}>Puma</button>
         <button onClick={() => { 
-          filterData("adidas","red")
+          filterData("addidas","red")
         }} className={ styles.redButton}>Adidas</button>
       </div>
     </div>
